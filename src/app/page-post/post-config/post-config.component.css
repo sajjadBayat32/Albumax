@@ -1,0 +1,22 @@
+.config-container {
+  padding: 12px;
+  direction: rtl;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  background: #fcfcfc;
+  margin-bottom: 20px;
+}
+
+.config-row {
+  margin-bottom: 10px;
+}
+
+.config-row span {
+  margin-right: 20px;
+}
+
+nz-form-control {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: left;
+}

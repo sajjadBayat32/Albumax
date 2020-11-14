@@ -1,0 +1,38 @@
+.footer-inner {
+  margin-top: 40px;
+  border-top: 1px solid #ababab;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 80px;
+  margin-right: 50px;
+  font-size: 12px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  line-height: 24px;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.footer-inner .title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-inner {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-inner {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+  }
+}

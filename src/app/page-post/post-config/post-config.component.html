@@ -1,0 +1,51 @@
+<div class="config-container">
+  <div class="config-row row">
+    <nz-form-label class="col" nzFor="email">سایز عکس مناسب آلبوم</nz-form-label>
+    <nz-form-control class="col align-self-start">
+      <nz-radio-group [(ngModel)]="form.appropriate_pic_size" nzButtonStyle="solid">
+        <label nz-radio-button nzValue="21*16">21 * 16</label>
+        <label nz-radio-button nzValue="18*13">18 * 13</label>
+      </nz-radio-group>
+    </nz-form-control>
+  </div>
+
+  <div class="config-row row">
+    <nz-form-label class="col" nzFor="email">ابعاد صفحات آلبوم</nz-form-label>
+    <nz-form-control class="col align-self-start">
+      <span>{{form.appropriate_pic_size | sizeToText}}</span>
+    </nz-form-control>
+  </div>
+
+  <div class="config-row row">
+    <nz-form-label class="col" nzFor="email">نوع صفحات آلبوم</nz-form-label>
+    <nz-form-control class="col align-self-start">
+      <nz-radio-group [(ngModel)]="form.album_page_type" nzButtonStyle="solid">
+        <label nz-radio-button [nzValue]="0">شونیزی</label>
+        <label nz-radio-button [nzValue]="1">فریمی</label>
+      </nz-radio-group>
+    </nz-form-control>
+  </div>
+
+  <ng-container *ngIf="form.album_page_type === 0">
+    <div class="config-row row">
+      <nz-form-label class="col" nzFor="email">چسب 2رو</nz-form-label>
+      <nz-form-control class="col align-self-start">
+        <label nz-checkbox [(ngModel)]="form.two_side_tape"></label>
+      </nz-form-control>
+    </div>
+
+    <div class="config-row row">
+      <nz-form-label class="col" nzFor="email">تعداد چسب</nz-form-label>
+      <nz-form-control class="col align-self-start">
+        <nz-input-number [(ngModel)]="form.album_page_tape_num" [disabled]="form.album_page_type !== 0 || !form.two_side_tape" [nzMin]="0" [nzMax]="3" [nzStep]="1"></nz-input-number>
+      </nz-form-control>
+    </div>
+  </ng-container>
+
+  <div class="config-row row">
+    <nz-form-label class="col" nzFor="email">تعداد صفحات آلبوم</nz-form-label>
+    <nz-form-control class="col align-self-start">
+      <nz-input-number [(ngModel)]="form.album_page_num" [nzMin]="1" [nzStep]="1"></nz-input-number>
+    </nz-form-control>
+  </div>
+</div>

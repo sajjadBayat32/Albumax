@@ -1,0 +1,119 @@
+<div id="main-content">
+  <div id="preload" *ngIf="page_loading">
+    <div class="kd-bounce">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="mobile">
+    <div class="container">
+      <div class="menu-mobile" (click)="showSideMenu('open')">
+        <span class="item item-1"></span>
+        <span class="item item-2"></span>
+        <span class="item item-3"></span>
+      </div>
+
+      <div class="logo">
+        <a href="index.html">Kelly</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hide-menu" [ngClass]="{'active': menu_side}" (click)="showSideMenu('close')"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="header affix" [ngClass]="{'active': menu_side}">
+          <div class="table">
+            <div class="table-cell">
+              <div class="logo">
+                <a href="index.html">خانم‌و‌آقای‌ طراح</a>
+              </div>
+
+              <div class="main-menu">
+                <nav>
+                  <ul class="menu-list">
+                    <li class="active menu-item-has-children">
+                      <a href="#">صفحه اصلی</a>
+<!--                      <ul class="sub-menu">-->
+<!--                        <li>-->
+<!--                          <a href="#">List Layout</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                          <a href="#">Tiled Layout</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                          <a href="#">Header Text</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                          <a href="#">Menu Right</a>-->
+<!--                        </li>-->
+<!--                      </ul>-->
+                    </li>
+                    <li>
+                      <a href="#">درباره ما</a>
+                    </li>
+                    <li>
+                      <a href="#">درباره محصولات</a>
+                    </li>
+                    <li>
+                      <a href="#">نحوه ثبت سفارش</a>
+                    </li>
+                    <li>
+                      <a href="#">انواع محصولات</a>
+                    </li>
+                    <li>
+                      <a href="#">رویدادها</a>
+                    </li>
+                    <li>
+                      <a href="#">ارتباط با ما</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="socials">
+                <a href="#" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" title="Behance">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" title="Search this site">
+                  <i class="fa fa-search" (click)="showSearchBox()"></i>
+                </a>
+              </div>
+
+              <div class="box-search" [ngClass]="{'active': search_box}">
+                <div class="table">
+                  <div class="table-cell">
+                    <div class="container">
+<!--                      <form class="search-form" action="#" method="get">-->
+<!--                        <input type="text" title="Search" placeholder="Search...">-->
+<!--                        <div class="kd-close" (click)="showSearchBox()"></div>-->
+<!--                      </form>-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="copyright">
+                <p>
+                  @طراحی شده توسط آلبوم‌عکس 2020
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 col-md-offset-3">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-footer></app-footer>

@@ -1,0 +1,44 @@
+@font-face{
+  font-family:yekanbold;
+  src:url('yekan/iranyekanwebbold(fanum).eot');
+  src:url('yekan/iranyekanwebbold(fanum).eot?#iefix') format('eot'),
+      url('yekan/iranyekanwebbold(fanum).woff2') format('woff2'),
+      url('yekan/iranyekanwebbold(fanum).woff') format('woff'),
+      url('yekan/iranyekanwebbold(fanum).ttf') format('ttf');
+  font-style:normal;
+  font-weight:300
+}
+
+@font-face{
+  font-family:yekan;
+  src:url('yekan/iranyekanwebregular(fanum).eot');
+  src:url('yekan/iranyekanwebregular(fanum).eot?#iefix') format('eot'),
+      url('yekan/iranyekanwebregular(fanum).woff2') format('woff2'),
+      url('yekan/iranyekanwebregular(fanum).woff') format('woff'),
+      url('yekan/iranyekanwebregular(fanum).ttf') format('ttf');
+  font-style:normal;
+  font-weight:700
+}
+
+@font-face{
+  font-family:yekanlight;
+  src:url('yekan/iranyekanweblight(fanum).eot');
+  src:url('yekan/iranyekanweblight(fanum).eot?#iefix') format('eot'),
+      url('yekan/iranyekanweblight(fanum).woff2') format('woff2'),
+      url('yekan/iranyekanweblight(fanum).woff') format('woff'),
+      url('yekan/iranyekanweblight(fanum).ttf') format('ttf');
+  font-style:normal;
+  font-weight:300
+}
+
+@font-face{
+  font-family:linearicons;
+  src:url('Linearicons-Free.eot?w118s');
+  src:url('Linearicons-Free.eot?#iefixw118s') format('embedded-opentype'),
+      url('Linearicons-Free.woff2?w118s') format('woff2'),
+      url('Linearicons-Free.woff?w118s') format('woff'),
+      url('Linearicons-Free.ttf?w118s') format('truetype');
+      /*url('./Linearicons-Free.svg?w118s#Linearicons-Free') format('svg');*/
+  font-weight:400;
+  font-style:normal
+}
